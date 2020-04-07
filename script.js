@@ -17,25 +17,21 @@ const Keyboard = {
   },
 
   init() {
-    // Create main elements
     this.elements.text = document.createElement('textarea');
     this.elements.main = document.createElement('div');
     this.elements.keysContainer = document.createElement('div');
 
-    // Setup main elements
     this.elements.main.classList.add('keyboard', 'keyboard--hidden');
     this.elements.text.classList.add('use-keyboard-input');
     this.elements.keysContainer.appendChild(this.createKeys());
 
     this.elements.keys = this.elements.keysContainer.querySelectorAll('.keyboard__key');
 
-    // Add to DOM
     this.elements.main.appendChild(this.elements.keysContainer);
     document.body.appendChild(this.elements.main);
     document.body.appendChild(this.elements.text);
 
 
-    // Automatically use keyboard for elements with .use-keyboard-input
     document.querySelectorAll('.use-keyboard-input').forEach((element) => {
       element.addEventListener('focus', () => {
         this.open(element.value, (currentValue) => {
@@ -54,7 +50,6 @@ const Keyboard = {
       17, 91, 18, 32, 107, 109, 37, 40, 39];
 
 
-    // Creates HTML for an icon
     const createIconHTML = (iconname) => `<i class="material-icons">${iconname}</i>`;
 
 
@@ -69,7 +64,6 @@ const Keyboard = {
       }
 
 
-      // Add attributes/classes
       keyElement.setAttribute('type', 'button');
       this.elements.text.setAttribute('id', 'cap');
       keyElement.classList.add('keyboard__key');
