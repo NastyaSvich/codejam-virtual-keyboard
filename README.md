@@ -1,4 +1,4 @@
-# codejam-virtual-keyboard
+# https://nastyasvich.github.io/codejam-virtual-keyboard/
 *all key files has been added in time.
 
 *repository contains several branch. Full project contains in gh-pages branch
