@@ -1,2 +1,0 @@
-# codejam-virtual-keyboard
-hello
