@@ -11,10 +11,6 @@
     z-index: 99999;
 }
 
-/* .keyboard--hidden {
-    bottom: -100%;
-} */
-
 .keyboard__key {
     height: 45px;
     width: 6%;
